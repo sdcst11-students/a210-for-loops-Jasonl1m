@@ -14,3 +14,16 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+import math
+prices = []
+for i in range(5):
+    price = float(input(f"Enter the price of item {i + 1} = "))
+    prices.append(price)
+total = sum(prices)
+print(f"Your subtotal is ${total:.2f}")
+gst = total * 0.05
+pst = total * 0.07
+final = total + gst + pst
+print(f"Your GST is ${gst:.2f}")
+print(f"Your PST is ${pst:.2f}")
+print(f"Your total is ${final:.2f}")

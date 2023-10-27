@@ -7,7 +7,7 @@ Draw a box filled with "*" symbols that matches the
 width and height.
 You will need 2 nested loops to draw the contents of
 1 row and the number of rows.
-
+  
 inputs:
 int number
 
@@ -22,3 +22,8 @@ enter a number:4
 ****
 
 """
+
+w = int(input('Enter the width of the box = '))
+h = int(input('Enter the height of the box= '))
+for i in range(h):
+    print("*" * w)

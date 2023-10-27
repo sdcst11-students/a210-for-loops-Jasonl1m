@@ -17,3 +17,14 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+x = int(input("Enter a number = "))
+if x < 1 or x > 9:
+    print("Invalid input. Please enter an integer that is smaller than 10.")
+else:
+    sum = 0
+    term = 0
+    for i in range(1, x + 1):
+        term = term * 10 + 1
+        sum = sum + term
+    print(f"The sum of the series is {sum}")
